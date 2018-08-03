@@ -1,0 +1,43 @@
+
+{
+    "apiName":"TVO_MCS_FusionExpense",
+    "apiVersion":"1.0",
+    "apiId":"1327153f-ee63-4d7a-a184-fecd39e25008",
+    "baseUrl":"http://<MCS_SERVER>:<MCS_PORT>/",
+    "authorization":{
+        "mobileBackendID":"<YOUR_MOBILE_BACKEND_ID>",
+        "anonymousKey":"<MBE_ANONYMOUS_KEY>",
+        "oauth":{
+            "tokenEndpoint":"<MBE_OAUTH_TOKEN_ENDPOINT>",
+            "clientId":"<MBE_OAUTH_CLIENT_ID>",
+            "clientSecret":"<MBE_OAUTH_CLIENT_ID>"
+        }
+    },
+    "container":{
+        "oracleMobileApiName":"OracleMobileAPI",
+        "port":4000
+    },
+    "deploy":{
+        "tempDirectory":"/tmp/mcs-deploy"
+    },
+    "tests":{
+        "deleteExpensesId":{
+            "method":"DELETE",
+            "resource":"/expenses/:id",
+            "uriParameters":{
+                "id":"<PARAMETER_VALUE>"
+            }
+        },
+        "getExpensesId":{
+            "method":"GET",
+            "resource":"/expenses/:id",
+            "uriParameters":{
+                "id":"<PARAMETER_VALUE>"
+            }
+        },
+        "getExpenses":{
+            "method":"GET",
+            "resource":"/expenses"
+        }
+    }
+}

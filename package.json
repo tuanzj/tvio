@@ -1,0 +1,12 @@
+{
+  "name" : "tvo_mcs_fusionexpense",
+  "version" : "1.0",
+  "description" : "TVO_MCS_FusionExpense",
+  "main" : "tvo_mcs_fusionexpense.js",
+  "oracleMobile" : {
+    "dependencies" : {
+      "apis" : { },
+      "connectors" : { }
+    }
+  }
+}

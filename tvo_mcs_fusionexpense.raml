@@ -1,0 +1,19 @@
+#%RAML 0.8
+title: TVO_MCS_FusionExpense
+version: 1.0
+baseUri: /mobile/custom/TVO_MCS_FusionExpense
+protocols: [HTTPS]
+/expenses:
+  get:
+    protocols: [HTTPS]
+  post:
+    protocols: [HTTPS]
+  /{id}:
+    uriParameters:
+      id:
+        displayName: id
+        type: number
+        required: true
+    get:
+    put:
+    delete:
